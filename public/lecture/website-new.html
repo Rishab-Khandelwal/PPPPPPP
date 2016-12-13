@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href = "css/styles.css" rel = "stylesheet"/>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class ="row container-fluid">
+    <div class ="col-md-4 hidden-xs hidden-sm">
+        <div class="navbar-header Rectifier">
+            <p class = "navbar-text pull-left">
+                <a href = "profile.html"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            </p>
+            <a class="navbar-brand" href="#">Websites</a>
+            <p class = "navbar-text pull-right">
+                <a href = "website-new.html"> <span class="glyphicon glyphicon-plus"></span></a>
+            </p>
+        </div>
+    </div>
+    <div class ="col-md-8">
+        <div class="navbar-header Rectifier">
+            <a class="navbar-brand" href="#">New Website</a>
+            <p class = "navbar-text pull-right">
+                <a href = "website-new.html"> <span class="glyphicon glyphicon-ok pull-right"></span></a>
+            </p>
+        </div>
+        </div>
+    </div>
+</nav>
+    <div class ="row container-fluid">
+        <div class = "col-md-4 hidden-xs hidden-sm">
+
+
+                <!--<form>
+                    <div class="form-group">
+                        <a href = "page-list.html">Blogging App</a>
+                        <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right "></span></a>
+
+                    </div>
+                    <div class="form-group">
+                        <a href = "page-list.html"> Address Book App</a>
+                        <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right"></span></a>
+                    </div>
+                    <div class="form-group">
+                        <a href = "page-list.html">Script Testing App</a>
+                        <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right"></span></a>
+                    </div>
+                    <div class="form-group">
+                        <a href = "page-list.html">Blogger</a>
+                        <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right"></span></a>
+                    </div>
+
+                </form>
+-->
+            <form>
+            <div ng-repeat = "website in model.websites" class="form-group" >
+                <!-- {{model.websites}}-->
+                <!--<a href = "views/page/page-list.view.client.html">{{website.name}}</a>-->
+                <a href = "#/user/{{website.developerId}}/website/{{website._id}}/page">{{website.name}}</a>
+                <a href = "#/user/{{website.developerId}}/website/{{website._id}}"><span class = "glyphicon glyphicon-cog pull-right "></span></a>
+            </div>
+            </form>
+        </div>
+
+<div class = "col-md-8">
+        <form>
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" class="form-control" id="username" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" rows="5" id="description" placeholder="Description"></textarea>
+            </div>
+
+        </form>
+</div>
+</div>
+</div>
+</body>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-footer">
+        <div class="col-xs-3 text-center pull-right">
+            <a href="profile.html" >
+                <span class="glyphicon glyphicon-user "></span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>

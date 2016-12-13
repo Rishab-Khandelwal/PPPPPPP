@@ -1,0 +1,59 @@
+body{
+    padding-top : 65px ;
+    overflow:hidden;
+}
+.navbar-default {
+    background-color: #3d96bd
+}
+.glyphicon-chevron-left{
+
+    color:white;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.container-footer {
+    height: 20px;
+    margin-top: 10px;
+}
+.glyphicon-plus:before {
+ /*   content: "\002b";*/
+    color:white;
+    margin-right: -20px;
+}
+.Rectifier{
+
+    float:none;
+}
+/*.glyphicon-user :before{
+    color :white;
+    margin-left: 60px;
+}*/
+
+/*.glyphicon-ok :before {
+    margin-right : 20px;
+}*/
+
+.glyphicon-ok:before {
+    /*content: "\e013";*/
+    color:white;
+    margin-right: 20px;
+}
+.glyphicon-user:before {
+    /*content: "\e008";*/
+    color:white;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+/*a {
+    color: white;
+    text-decoration: none;
+}*/
+.navbar-default .navbar-text {
+    color: white;
+}
+.glyphicon-play:before
+{color: white;
+    margin-left: 60px;
+    margin-top: 20px;}
+

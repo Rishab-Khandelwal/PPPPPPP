@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href = "css/styles.css" rel = "stylesheet"/>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <p class = "navbar-text pull-left">
+                <a href = "profile.html"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            </p>
+            <a class="navbar-brand" href="#">Websites</a>
+            <p class = "navbar-text pull-right">
+               <a href = "website-new.html"> <span class="glyphicon glyphicon-plus"></span></a>
+            </p>
+        </div>
+        </div>
+</nav>
+<div class = "container">
+<form>
+    <div ng-repeat = "website in model.websites" class="form-group" >
+        <!-- {{model.websites}}-->
+        <!--<a href = "views/page/page-list.view.client.html">{{website.name}}</a>-->
+        <a href = "#/user/{{website.developerId}}/website/{{website._id}}/page">{{website.name}}</a>
+        <a href = "#/user/{{website.developerId}}/website/{{website._id}}"><span class = "glyphicon glyphicon-cog pull-right "></span></a>
+    </div>
+</form>
+    <!--<form>
+        <div class="form-group">
+            <a href = "page-list.html">Address Book App</a>
+            <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right "></span></a>
+
+        </div>
+        <div class="form-group">
+            <a href = "page-list.html"> Blogger</a>
+            <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right"></span></a>
+        </div>
+        <div class="form-group">
+        <a href = "page-list.html">Blogging App</a>
+            <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right"></span></a>
+        </div>
+        <div class="form-group">
+        <a href = "page-list.html">Script Testing App</a>
+            <a href = "website-edit.html"><span class = "glyphicon glyphicon-cog pull-right"></span></a>
+        </div>
+
+    </form>
+-->
+</div>
+
+<!--<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        Footer
+    </div>
+</nav>-->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-footer">
+        <div class="col-xs-3 text-center pull-right">
+            <a href="profile.html" >
+                <span class="glyphicon glyphicon-user "></span>
+            </a>
+        </div>
+        <!--<div class="col-xs-3 text-center pull-right">
+            <a href="#" >
+                <span class="glyphicon glyphicon-user "></span>
+            </a>
+        </div>-->
+
+    </div>
+</nav>
+
+</body>
+</html>
